@@ -37,6 +37,8 @@ class App:
             self.handle_events()
             self.update(dt)
             self.draw()
+            
+        pygame.quit()
 
     def handle_events(self):
         events = pygame.event.get()
@@ -81,7 +83,6 @@ class App:
         pygame.display.flip()
 
 
-        pygame.quit()
 
 
 if __name__ == "__main__":
